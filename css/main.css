@@ -10,9 +10,15 @@ box-sizing: border-box;
 box-sizing: inherit;
 }
 
+/* Default fonts/colors */
+
+@font-face {
+    font-family: "Canela";
+    src: url("../fonts/canela/Canela-Regular-Trial.otf");
+}
 :root {
     --font-sans-serif: "Inter", sans-serif;
-    --font-serif: Canela, serif;
+    --font-serif: "Canela", serif;
     --color-white: #FFF;
     --color-black: #000;
     --color-dark-gray: #A0A0A5;
@@ -20,9 +26,7 @@ box-sizing: inherit;
     --color-yellow: #FFDC61;
 }
 
-
 /* ==== TYPOGRAPHY ==== */
-
 
 body {
   font-family: var(--font-sans-serif);
@@ -52,3 +56,53 @@ h2 {
 .h2--large {
     font-size: 40px;
 }
+
+/* ==== HEADER ==== */
+
+.header {
+    background: black;
+    margin-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    width: 7rem;
+    padding-top: 1rem;
+}
+
+.header__navbar {
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-family:var(--font-sans);
+}
+
+.header__navbar-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__navbar-item {
+    list-style: none;
+    margin: 1.5rem;
+    padding: 0.2rem 0;
+}
+
+.header__navbar-item--selected {
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+/* ==== SIDEBAR ==== */
+
+/* ==== CASE STUDIES ==== */
+
+/* ==== CONTACT ==== */
+
+/* ==== FOOTER ==== */
+
+
+
