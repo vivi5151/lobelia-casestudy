@@ -10,8 +10,6 @@ box-sizing: border-box;
 box-sizing: inherit;
 }
 
-/* Default fonts/colors */
-
 @font-face {
     font-family: "Canela";
     src: url("../fonts/canela/Canela-Regular-Trial.otf");
@@ -26,6 +24,10 @@ box-sizing: inherit;
     --color-yellow: #FFDC61;
 }
 
+img {
+    display: block;
+}
+
 /* ==== COMPONENT PAGE STYLING ==== */
 
 /* spacing */
@@ -35,7 +37,7 @@ html {
     margin: 2rem auto;
 }
 
-h3 {
+h2 {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--color-yellow);
@@ -72,13 +74,20 @@ h3 {
 body {
   font-family: var(--font-sans-serif);
   font-optical-sizing: auto;
-  font-size: 16px;
   font-weight: 300;
   font-style: normal;
 }
 
+p {
+    font-size: calc(9.48235px + .58824vw);
+    letter-spacing: -.03em;
+    line-height: 1.4545454545em;
+}
+
 .p--small {
-    font-size: 12px;
+    font-size: calc(14.87059px + .14706vw);
+    letter-spacing: -.03em;
+    line-height: 1.5555555556em;
 }
 
 .p--large {
@@ -107,7 +116,7 @@ h2, {
 
 a {
     text-decoration: none;
-    color: var(--color-dark-gray);
+    color: black;
 }
 
 /* ==== HEADER ==== */
@@ -157,5 +166,44 @@ a {
 
 /* ==== FOOTER ==== */
 
+.component__atom {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer {
+    color: var(--color-black);
+    font-size: calc(9.48235px + .58824vw);
+    letter-spacing: -.03em;
+    line-height: 1.4545454545em;
+}
 
+.footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    flex: 0 0 1;
+    object-fit: contain;
+}
+
+.footer__lists {
+    flex: 0 0 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__list a {
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.footer__copyright {
+    color: var(--color-dark-gray);
+}
