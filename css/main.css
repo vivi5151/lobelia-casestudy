@@ -26,7 +26,48 @@ box-sizing: inherit;
     --color-yellow: #FFDC61;
 }
 
+/* ==== COMPONENT PAGE STYLING ==== */
+
+/* spacing */
+
+html {
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+h3 {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-yellow);
+}
+
+/* componenets navbar */
+
+.components__navbar ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.components__navbar li {
+    padding: 1rem;
+}
+
+.components__navbar a:hover {
+    border-bottom: 2px solid var(--color-yellow);
+}
+
+
+/* component article */
+
+.component {
+    padding: 0 1rem;
+}
+
 /* ==== TYPOGRAPHY ==== */
+
+/* body */
 
 body {
   font-family: var(--font-sans-serif);
@@ -48,13 +89,25 @@ body {
     text-transform: uppercase;
 }
 
-h2 {
-    font-family: Canela;
+/* headings */
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+}
+
+h2, {
     font-size: 32px;
 }
 
 .h2--large {
     font-size: 40px;
+}
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: var(--color-dark-gray);
 }
 
 /* ==== HEADER ==== */
