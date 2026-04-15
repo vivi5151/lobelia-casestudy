@@ -80,8 +80,19 @@ h3 {
     padding: 0 1rem;
 }
 
+.component__image {
+    max-width: initial;
+    overflow-x: auto;
+    padding: 1rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 1rem;
+}
+
 .component__code {
-    padding-left: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 1rem;
 }
 
 /* ==== TYPOGRAPHY ==== */
@@ -191,15 +202,14 @@ a {
 /* ==== CASE STUDIES ==== */
 
 .case-card-container {
-    padding: 2rem;
     max-width: 30rem;
-    margin-top: 1rem;
-    background: var(--color-black);
-    color: white;
 }
 
 .case-card {
     position: relative;
+    background: var(--color-black);
+    color: white;
+    padding: 2rem;
 }
 
 .case-card__location {
