@@ -26,13 +26,18 @@ box-sizing: inherit;
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 /* ==== COMPONENT PAGE STYLING ==== */
 
-html {
+main {
     padding: 2rem 5rem;
     margin: 2rem auto;
+}
+
+h1 {
+    color: var(--color-white);
 }
 
 h2, h3 {
@@ -48,6 +53,12 @@ h3 {
     border-top: 2px solid var(--color-yellow);
 }
 
+.components__header {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 2rem 4rem;
+}
+
 .components__navbar ul {
     list-style: none;
     padding-left: 0;
@@ -58,6 +69,7 @@ h3 {
 
 .components__navbar li {
     padding: 1rem;
+    color: var(--color-white);
 }
 
 .components__navbar a:hover {
