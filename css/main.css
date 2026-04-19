@@ -163,7 +163,6 @@ a {
 
 .header {
     background: black;
-    margin-top: 3rem;
     padding: 3rem;
     display: flex;
     justify-content: space-between;
@@ -175,7 +174,6 @@ a {
 }
 
 .header__navbar {
-    color: var(--color-white);
     text-transform: uppercase;
     font-family:var(--font-sans);
 }
@@ -188,6 +186,7 @@ a {
 }
 
 .header__navbar-item {
+    color: var(--color-white);
     list-style: none;
     margin: 1.5rem;
     padding: 0.2rem 0;
