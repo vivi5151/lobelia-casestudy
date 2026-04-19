@@ -36,6 +36,11 @@ main {
     margin: 2rem auto;
 }
 
+.background--black {
+    background: var(--color-black);
+    padding: 2rem;
+}
+
 h1 {
     color: var(--color-white);
 }
@@ -124,9 +129,6 @@ p {
    line-height: 1.2em;
 }
 
-.p--medium-weight {
-}
-
 .p--uppercase {
     text-transform: uppercase;
 }
@@ -169,10 +171,6 @@ a {
     flex-wrap: wrap;
 }
 
-.header__logo {
-    width: 7rem;
-}
-
 .header__navbar {
     text-transform: uppercase;
     font-family:var(--font-sans);
@@ -202,11 +200,6 @@ a {
 
 .case-card-container {
     max-width: 36rem;
-}
-
-.background--black {
-    background: var(--color-black);
-    padding: 2rem;
 }
 
 .case-card {
