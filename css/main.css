@@ -54,6 +54,10 @@ h3 {
     font-size: 2rem;
 }
 
+.color--white {
+    color: var(--color-white);
+}
+
 .border-top {
     border-top: 2px solid var(--color-yellow);
 }
@@ -98,6 +102,26 @@ h3 {
     padding: 1rem;
     border: 1px solid var(--color-light-gray);
     border-radius: 1rem;
+}
+
+.width--x-small {
+    max-width: 8rem;
+}
+
+.width--small {
+    max-width: 18rem;
+}
+
+.width--medium {
+    max-width: 32rem;
+}
+
+.width--large {
+    max-width: 40rem;
+}
+
+.width--x-large {
+    max-width: 68rem;
 }
 
 /* ==== TYPOGRAPHY ==== */
