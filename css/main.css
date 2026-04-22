@@ -221,9 +221,14 @@ a {
 
 .sidebar__navbar-item a {
     color: var(--color-white);
+    transition: color .2s ease-in-out;
 }
 
 .sidebar__navbar-item--selected a {
+    color: var(--color-yellow);
+}
+
+.sidebar__navbar-item a:hover {
     color: var(--color-yellow);
 }
 
