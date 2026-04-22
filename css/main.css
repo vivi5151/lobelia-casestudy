@@ -167,6 +167,23 @@ a {
 
 .button {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.button__text {
+    padding: 0 1rem;
+}
+
+.button__icon {
+    background-image: url("../components/images/button--default.svg");
+    background-size: cover;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: background-image 0.3s ease;
+}
+
+.button__icon:hover {
+    background-image: url("../components/images/button--hover.svg");
 }
 
 /* ==== HEADER ==== */
