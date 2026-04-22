@@ -18,13 +18,13 @@
         <a href="#!"><h1>Web Components</h1></a>
 
         <nav class="components__navbar">
-            <ul>
-                <a href="#typography"><li>Typography</li></a>
-                <a href="#header"><li>Header</li></a>
-                <a href="#sidebar"><li>Sidebar</li></a>
-                <a href="#case-card"><li>Case Study Card</li></a>
-                <a href="#contact"><li>Contact</li></a>
-                <a href="#footer"><li>Footer</li></a>
+            <ul class="components__navbar-list">
+                <li class="components__navbar-item"><a href="#typography">Typography</a></li>
+                <li class="components__navbar-item"><a href="#header">Header</a></li>
+                <li class="components__navbar-item"><a href="#sidebar">Sidebar</a></li>
+                <li class="components__navbar-item"><a href="#case-card">Case Study Card</a></li>
+                <li class="components__navbar-item"><a href="#contact">Contact</a></li>
+                <li class="components__navbar-item"><a href="#footer">Footer</a></li>
             </ul>
         </nav>
     </header>
@@ -153,23 +153,47 @@
             >
             
             <div class="component__code">
-                <header class="header">
+                <header class="header background--black">
                     <a href="#!"><img class="header__logo" alt="Lobelia logo - black background yellow text" srcset="images/header__logo.png 2x" src="images/header__logo.png"></a>
                     
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
-                            <a href="#!"><li class="header__navbar-item"><a href="#!">What We Do</a></li>
-                            <a href="#!"><li class="header__navbar-item">How It Works</li></a>
-                            <a href="#!"><li class="header__navbar-item header__navbar-item--selected">Case Studies</li></a>
-                            <a href="#!"><li class="header__navbar-item">About</li></a>
-                            <a href="#!"><li class="header__navbar-item">Contact</li></a>
+                            <li class="header__navbar-item"><a href="#!">What We Do</a></li>
+                            <li class="header__navbar-item"><a href="#!">How It Works</a></li>
+                            <li class="header__navbar-item header__navbar-item--selected"><a href="#!">Case Studies</a></li>
+                            <li class="header__navbar-item"><a href="#!">About</a></li>
+                            <li class="header__navbar-item"><a href="#!">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
             </div>
         </article>
 
+    <!-- SIDEBAR -->
     <h2 class="border-top" id="sidebar">Sidebar</h2>
+        <article class="component component-container">
+            <img class="component__image"
+                alter ="Sidebar screenshot"
+                srcset="images/sidebar__navbar.png 2x"
+                src="images/sidebar__navbar.png"
+            >
+
+            <div class="component__code">
+                <div class="sidebar background--black">
+                    <nav class="sidebar__navbar">
+                        <ul class="sidebar__navbar-list">
+                            <li class="sidebar__navbar-item sidebar__navbar-item--selected"><a href="#!">All</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Climate</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Biomass</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Water</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Soil</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Air</a></li>
+                            <li class="sidebar__navbar-item"><a href="#!">Ocean</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </article>
 
     <!-- CASE CARD -->
     <h2 class="border-top" id="case-card">Case Card</h2>

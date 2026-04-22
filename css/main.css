@@ -69,7 +69,7 @@ h3 {
     padding: 2rem 4rem;
 }
 
-.components__navbar ul {
+.components__navbar-list {
     list-style: none;
     padding-left: 0;
     display: flex;
@@ -77,8 +77,11 @@ h3 {
     flex-wrap: wrap;
 }
 
-.components__navbar li {
+.components__navbar-item {
     padding: 1rem;
+}
+
+.components__navbar-item a {
     color: var(--color-white);
 }
 
@@ -163,7 +166,6 @@ a {
 /* ==== HEADER ==== */
 
 .header {
-    background: black;
     padding: 3rem;
     display: flex;
     justify-content: space-between;
@@ -172,7 +174,6 @@ a {
 
 .header__navbar {
     text-transform: uppercase;
-    font-family:var(--font-sans);
 }
 
 .header__navbar-list {
@@ -183,10 +184,13 @@ a {
 }
 
 .header__navbar-item {
-    color: var(--color-white);
     list-style: none;
     margin: 1.5rem;
     padding: 0.2rem 0;
+}
+
+.header__navbar-item a {
+    color: var(--color-white);
 }
 
 .header__navbar-item--selected {
@@ -194,6 +198,34 @@ a {
 }
 
 /* ==== SIDEBAR ==== */
+
+.sidebar {
+    padding: 2rem;
+    max-width: 5rem;
+}
+
+.sidebar__navbar-list {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__navbar-item {
+    color: var(--color-white);
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.sidebar__navbar-item:last-child {
+    padding-bottom: 0;
+}
+
+.sidebar__navbar-item a {
+    color: var(--color-white);
+}
+
+.sidebar__navbar-item--selected a {
+    color: var(--color-yellow);
+}
 
 /* ==== CASE STUDIES ==== */
 
