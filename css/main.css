@@ -163,6 +163,12 @@ a {
     color: black;
 }
 
+/* ==== BUTTON ==== */
+
+.button {
+    display: flex;
+}
+
 /* ==== HEADER ==== */
 
 .header {
