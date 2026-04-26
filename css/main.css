@@ -31,9 +31,19 @@ img {
 
 /* ==== COMPONENT PAGE STYLING ==== */
 
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
 main {
-    padding: 2rem 5rem;
-    margin: 2rem auto;
+    padding: 4rem 4rem;
+    margin: 0 auto;
+}
+
+hr {
+    border: 1px solid var(--color-yellow);
+    margin: 7rem 0;
 }
 
 .background--black {
@@ -59,20 +69,40 @@ h3 {
     color: var(--color-white);
 }
 
-.border-top {
-    border-top: 2px solid var(--color-yellow);
+.color--dark-gray {
+    color: var(--color-dark-gray);
 }
 
 .components__header {
     background: var(--color-black);
     color: var(--color-white);
     padding: 2rem 4rem;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .components__header {
+    display: none;
+  }
+}
+
+.component__header-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .components__navbar-list {
     list-style: none;
     padding-left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 }
