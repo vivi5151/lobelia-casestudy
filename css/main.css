@@ -1,7 +1,6 @@
 /* ==== DEFAULT STYLING ==== */
 
 /* Box Model Fix */
-
 html {
 box-sizing: border-box;
 }
@@ -14,6 +13,7 @@ box-sizing: inherit;
     font-family: "Canela";
     src: url("../fonts/canela/Canela-Regular-Trial.otf");
 }
+
 :root {
     --font-sans-serif: "Inter", sans-serif;
     --font-serif: "Canela", serif;
@@ -30,6 +30,8 @@ img {
 }
 
 /* ==== COMPONENT PAGE STYLING ==== */
+
+/* layout & typography */
 
 .columns {
     display: grid;
@@ -73,6 +75,8 @@ h3 {
     color: var(--color-dark-gray);
 }
 
+/* main header/sidebar */
+
 .components__header {
     background: var(--color-black);
     color: var(--color-white);
@@ -115,9 +119,11 @@ h3 {
     color: var(--color-white);
 }
 
-.components__navbar a:hover {
+.components__navbar a:hover, .components__navbar a:active {
     border-bottom: 2px solid var(--color-yellow);
 }
+
+/* component containers */
 
 .component {
     padding: 0 1rem;
@@ -329,8 +335,6 @@ a {
     margin-bottom: 0;
 }
 
-/* ==== CONTACT ==== */
-
 /* ==== FOOTER ==== */
 
 .footer__flex-container {
@@ -341,12 +345,10 @@ a {
 }
 
 .footer__logo {
-    flex: 0 0 1;
     object-fit: contain;
 }
 
 .footer__lists {
-    flex: 0 0 1;
     display: flex;
     justify-content: space-between;
 }
