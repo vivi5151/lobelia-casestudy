@@ -3,31 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies | Lobelia</title>
+    <title>Lobelia | Case Studies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <a href="https://vivi5151.github.io/lobelia-casestudy/components/index">Go to Components page.</a>
+    <!-- HEADER -->
+    <header class="header background--black">
+        <a href="#!">
+            <img 
+                class="header__logo" 
+                alt="Lobelia logo - black background yellow text"
+                srcset="images/header__logo.png 2x" 
+                src="images/header__logo.png">
+        </a>
+        
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a href="#!">What We Do</a></li>
+                <li class="header__navbar-item"><a href="#!">How It Works</a></li>
+                <li class="header__navbar-item header__navbar-item--selected"><a href="#!">Case Studies</a></li>
+                <li class="header__navbar-item"><a href="#!">About</a></li>
+                <li class="header__navbar-item"><a href="#!">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div class="columns">
+            <!-- LEFT: SIDEBAR -->
+            <div class="sidebar background--black sticky">
+                <nav class="sidebar__navbar">
+                    <ul class="sidebar__navbar-list">
+                        <li class="sidebar__navbar-item sidebar__navbar-item--selected"><a href="#!">All</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Climate</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Biomass</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Water</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Soil</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Air</a></li>
+                        <li class="sidebar__navbar-item"><a href="#!">Ocean</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <!-- CONTACT 
-            <h2 id="contact">Contact (.section-contact)</h2>
+            <!-- RIGHT: CASE STUDIES -->
+            <div class="case-studies-grid">
+                <div class="case-card">
+                    <div class="case-card__image-container">
+                        <img class="case-card__image"
+                            alt="Green, blue, and yellow agricultural map"
+                            srcset="images/case-card__image.png 2x"
+                            src="images/case-card__image.png"
+                        >
+                    </div>
 
-            <div class="component component-container">
-                <img class="component__image"
-                    alt="Screenshot of contact section"
-                    srcset="images/section-contact.png 2x"
-                    src="images/section-contact.png"
-                >
-                
-                <div class="component__code section-contact">
-                    <h2 class="h2--large">Ready to take action?</h2>
+                    <p class="case-card__client p--small p--uppercase">FAO - United Nations</p>
 
-                    <a class="button" href="#!">
-                        <p class="button__text p--small p--uppercase">Get in touch</p>
-                        <div class="button__icon"></div>
-                    </a>
+                    <p class="case-card__topic p--large">How can soil moisture anticipate deadly loculst outbreaks?</p>
+
+                    <p class="case-card__location p--small p--vertical">Africa, Near East & Southwest Asia</p>
                 </div>
             </div>
-        -->
+
+        </div>
+
+    <!-- CONTACT -->
+        <h2 class="h2--large">Ready to take action?</h2>
+
+        <a class="button" href="#!">
+            <p class="button__text p--small p--uppercase">Get in touch</p>
+            <div class="button__icon"></div>
+        </a>
+    </main>
+
+    <!-- FOOTER -->
+     <footer class="footer cfooter__flex-container">
+            <img 
+                class="footer__logo" 
+                alt="Lobelia logo - white background black text" 
+                srcset="images/footer__logo.png 2x"
+                src="images/footer__logo.png"
+            >
+
+            <div class="footer__lists p--medium">
+                <p class="footer__address">
+                    113 Doctor Trueta Street<br>
+                    1st floor<br>
+                    08005 Barcelona<br>
+                </p>
+
+                <ul class="footer__list footer__contact">
+                    <li class="footer__list-item">+34 93 655 82 32</li>
+                    <li class="footer__list-item"><a href="#!">info@lobelia.earth</a></li>
+                </ul>
+
+                <nav class="footer__navbar">
+                    <ul class="footer__list footer__navbar">
+                        <li class="footer__list-item"><a href="#!">Careers</a></li>
+                        <li class="footer__list-item"><a href="#!">Next Generation</a></li>
+                        <li class="footer__list-item"><a href="#!">isardSAT</a></li>
+                        <li class="footer__list-item"><a href="#!">Legal Disclaimer</a></li>
+                        <li class="footer__list-item"><a href="#!">Quality + Sustainability</a></li>
+                    </ul>
+                </nav>
+                
+        <p class="footer__copyright p--small">&copy;2026 Lobelia. All rights reserved.</p>
+    </footer>
 </body>
 </html>
