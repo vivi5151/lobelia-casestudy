@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="header background--black">
@@ -33,7 +34,7 @@
     </header>
 
     <main>
-        <div class="columns">
+        <div class="sidebar-cases-container">
             <!-- LEFT: SIDEBAR -->
             <div class="sidebar background--black sticky">
                 <nav class="sidebar__navbar">
@@ -50,33 +51,52 @@
             </div>
 
             <!-- RIGHT: CASE STUDIES -->
-            <div class="case-studies-grid">
-                <div class="case-card">
+            <section class="case-studies case-studies-grid background--black">
+                <h2 class="case-studies__title">Keep track of what’s changing to improve your decision making.</h2>
+
+                <article class="case-card case-card-container">
                     <div class="case-card__image-container">
                         <img class="case-card__image"
                             alt="Green, blue, and yellow agricultural map"
-                            srcset="images/case-card__image.png 2x"
-                            src="images/case-card__image.png"
+
+                            src="https://www.lobelia.earth/_vercel/image?url=/files/case-study-fao.jpg&amp;w=1024&amp;q=70"
                         >
                     </div>
 
                     <p class="case-card__client p--small p--uppercase">FAO - United Nations</p>
 
-                    <p class="case-card__topic p--large">How can soil moisture anticipate deadly loculst outbreaks?</p>
+                    <h3 class="case-card__topic p--large">How can soil moisture anticipate deadly loculst outbreaks?</h3>
 
                     <p class="case-card__location p--small p--vertical">Africa, Near East & Southwest Asia</p>
-                </div>
-            </div>
+                </article>
 
+                <article class="case-card case-card-container">
+                    <div class="case-card__image-container">
+                        <img class="case-card__image"
+                            alt="Green, blue, and yellow agricultural map"
+
+                            src="https://www.lobelia.earth/_vercel/image?url=/files/case-study-fao.jpg&amp;w=1024&amp;q=70"
+                        >
+                    </div>
+
+                    <p class="case-card__client p--small p--uppercase">FAO - United Nations</p>
+
+                    <h3 class="case-card__topic p--large">How can soil moisture anticipate deadly loculst outbreaks?</h3>
+
+                    <p class="case-card__location p--small p--vertical">Africa, Near East & Southwest Asia</p>
+                </article>
+            </section>
         </div>
 
     <!-- CONTACT -->
-        <h2 class="h2--large">Ready to take action?</h2>
+        <section class="contact">
+            <h2 class="h2--large">Ready to take action?</h2>
 
-        <a class="button" href="#!">
-            <p class="button__text p--small p--uppercase">Get in touch</p>
-            <div class="button__icon"></div>
-        </a>
+            <a class="button" href="#!">
+                <p class="button__text p--small p--uppercase">Get in touch</p>
+                <div class="button__icon"></div>
+            </a>
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -109,7 +129,7 @@
                         <li class="footer__list-item"><a href="#!">Quality + Sustainability</a></li>
                     </ul>
                 </nav>
-                
+
         <p class="footer__copyright p--small">&copy;2026 Lobelia. All rights reserved.</p>
     </footer>
 </body>
