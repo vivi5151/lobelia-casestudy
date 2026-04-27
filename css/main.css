@@ -257,7 +257,19 @@ a {
     margin-bottom: 0;
 }
 
+/* ==== CONTACT SECTION ==== */
+
+.contact {
+    margin: 6rem;
+}
+
 /* ==== FOOTER ==== */
+
+.footer {
+    margin: 0 6rem 6rem 6rem;
+    padding-top: 6rem;
+    border-top: 1px solid var(--color-light-gray);
+}
 
 .footer__flex-container {
     display: flex;
@@ -289,4 +301,5 @@ a {
 
 .footer__copyright {
     color: var(--color-dark-gray);
+    margin-top: 8rem;
 }
