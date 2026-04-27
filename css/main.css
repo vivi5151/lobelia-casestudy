@@ -78,7 +78,7 @@ p {
 
 /* headings */
 
-h1, h2, h3 {
+h1, h2 {
     font-family: var(--font-serif);
 }
 
@@ -90,6 +90,12 @@ h2 {
 
 .h2--large {
     font-size: 7rem;
+}
+
+h3 {
+   font-size: 2rem;
+   line-height: 1.2em;
+   font-weight: 300;
 }
 
 /* links */
@@ -200,23 +206,26 @@ a {
 }
 
 /* ==== CASE STUDIES ==== */
+
+.case-studies {
+    padding-bottom: 24rem;
+    padding-right: 20%;
+}
+
 .case-studies-grid {
-    display: flex;
-    flex-wrap: wrap;
-    /*
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding-right: 20rem;
-    */
+    justify-content: start;
+    align-content: end;
+    row-gap: 12rem;
+    column-gap: 10rem;
 }
 
 .case-studies__title {
-    max-width: 34%;
     color: var(--color-white);
 }
-
 .case-card-container {
-    max-width: 34%;
+    grid-row: span 2;
 }
 
 .case-card {
