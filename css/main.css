@@ -246,6 +246,7 @@ a {
 .case-card-container {
     grid-row: span 2;
     margin-bottom: 12rem;
+    max-width: 30rem;
 }
 
 .case-card-container:first-of-type {
