@@ -87,7 +87,7 @@ h1, h2 {
 }
 
 h2 {
-    font-size: calc(26.8px + 2.5vw);
+    font-size: 4.5rem;
     line-height: 1.1em;
     font-weight: normal;
 }
@@ -238,6 +238,9 @@ a {
 .case-studies__title {
     color: var(--color-white);
     margin-bottom: 8rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .case-card-container {
@@ -252,6 +255,7 @@ a {
 .case-card {
     position: relative;
     color: white;
+    padding: 0 2rem 0 2rem;
 }
 
 .case-card__location {
@@ -264,8 +268,8 @@ a {
 }
 
 .case-card__image-container {
-    max-height: 40rem;
     overflow: hidden;
+    max-height: 40rem;
 }
 
 .case-card__image {
