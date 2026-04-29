@@ -1,5 +1,9 @@
 /* ==== DEFAULT STYLING ==== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Box Model Fix */
 html {
 box-sizing: border-box;
@@ -110,6 +114,7 @@ a {
 .button {
     display: flex;
     flex-wrap: wrap;
+    transition: transform 0.3s ease;
 }
 
 .button__text {
@@ -124,7 +129,11 @@ a {
     transition: background-image 0.3s ease;
 }
 
-.button__icon:hover {
+.button:hover {
+    transform: translateY(-5px);
+}
+
+.button:hover .button__icon {
     background-image: url("../components/images/button--hover.svg");
 }
 
@@ -152,10 +161,21 @@ a {
     list-style: none;
     margin: 1.5rem;
     padding: 0.2rem 0;
+    transform: translateY(0);
+    transition: transform .2s ease-in-out;
+}
+
+.header__navbar-item:hover {
+    transform: translateY(-5px);
 }
 
 .header__navbar-item a {
     color: var(--color-white);
+    /* transition: color .2s ease-in-out; */
+}
+
+.header__navbar-item a:hover {
+   /* color: var(--color-yellow); */
 }
 
 .header__navbar-item--selected {
@@ -302,10 +322,17 @@ a {
 
 .footer__list-item {
     margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer__list-item:hover {
+    transform: translateY(-5px);
 }
 
 .footer__list-item a {
     border-bottom: 1px solid var(--color-light-gray);
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
 }
 
 .footer__copyright {
