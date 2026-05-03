@@ -96,7 +96,7 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 4.5rem;
+    font-size: calc(26.8px + 2.5vw);
     line-height: 1.05em;
     letter-spacing: -.01em;
     font-weight: 400;
@@ -190,38 +190,87 @@ a {
 
 /* ==== SIDEBAR ==== */
 
-.sidebar-cases-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 0;
-    position: relative;
+/* large screen sizes: navbar on left */
+@media screen and (min-width: 1024px) {
+    .sidebar-cases-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 0;
+        position: relative;
+        background: var(--color-black);
+    }
+
+    .sidebar {
+        padding: 6rem;
+        position: sticky;
+        left: 0;
+    }
+
+    .sidebar__navbar-list {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar__navbar-item {
+        color: var(--color-white);
+        list-style: none;
+        padding-bottom: 1rem;
+    }
+
+    .sidebar__navbar-item:last-child {
+        padding-bottom: 0;
+    }
+
+    .sidebar__navbar-item a {
+        color: var(--color-white);
+        transition: color .2s ease-in-out;
+    }
+
+    .sidebar__navbar-item--selected a {
+        color: var(--color-yellow);
+    }
+
+    .sidebar__navbar-item a:hover {
+        color: var(--color-yellow);
+    }
 }
 
-.sidebar {
-    padding: 6rem;
-    position: sticky;
-    left: 0;
+/* small screen sizes: navbar on top */
+@media screen and (max-width: 1024px) {
+    .sidebar-cases-container {
+        position: relative;
+        background: var(--color-black);
+    }
+
+    .sidebar {
+        position: sticky;
+        top: 0;
+
+    }
+
+    .sidebar__navbar-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar__navbar-item {
+        color: var(--color-white);
+        list-style: none;
+        padding-right: 1rem;
+    }
+
+    .sidebar__navbar-item:last-child {
+        padding-right: 0;
+    }
 }
 
-.sidebar__navbar-list {
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar__navbar-item {
-    color: var(--color-white);
-    list-style: none;
-    padding-bottom: 1rem;
-}
-
-.sidebar__navbar-item:last-child {
-    padding-bottom: 0;
-}
-
+/* navbar links */
 .sidebar__navbar-item a {
-    color: var(--color-white);
-    transition: color .2s ease-in-out;
-}
+        color: var(--color-white);
+        transition: color .2s ease-in-out;
+    }
 
 .sidebar__navbar-item--selected a {
     color: var(--color-yellow);
@@ -231,49 +280,71 @@ a {
     color: var(--color-yellow);
 }
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-}
 
 /* ==== CASE STUDIES ==== */
 
 .case-studies {
-    padding-bottom: 16rem;
-    padding-right: 20%;
+    padding-bottom: 12vw;
+} 
+/* large screen sizes: 2 column grid */
+@media (min-width: 1024px) {
+    .case-studies {
+        padding-right: 20vw;
+    }
+
+    .case-studies-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-content: start;
+        column-gap: 5.5vw;
+    }
+
+    .case-card-container {
+        grid-row: span 2;
+        margin-bottom: 10vw;
+        max-width: 30rem;
+    }
+
+    .case-card-container:first-of-type {
+        grid-row: 1 / 3;
+    }
+
+    .case-studies__title {
+        color: var(--color-white);
+        margin: 0 0 8rem 2rem;
+        padding-top: 0;
+    }
 }
 
-.case-studies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-content: start;
-    align-content: start;
-    column-gap: 5.5vw;
+/* large screen sizes: vertical */
+@media screen and (max-width: 1024px) {
+    .case-studies {
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    .case-studies:first-of-type {
+        row-gap: 2rem;
+    }
+
+    .case-studies__title {
+        color: var(--color-white);
+        margin: 0;
+    }
 }
 
-.case-studies__title {
-    color: var(--color-white);
-    margin-bottom: 8rem;
-    margin-left: 2rem;
-    margin-top: 0;
-    padding-top: 0;
-}
+/* case card headline */
 
-.case-card-container {
-    grid-row: span 2;
-    margin-bottom: 10vw;
-    max-width: 30rem;
-}
 
-.case-card-container:first-of-type {
-    grid-row: 1 / 3;
-}
+/* case cards */
 
 .case-card {
     position: relative;
     color: white;
-    padding: 0 1.5rem 0 2rem;
+    padding-right: 1.5rem;
 }
 
 .case-card__location {
@@ -292,6 +363,7 @@ a {
 
 .case-card__image {
     object-fit: cover;
+    width: 100%;
     transition: transform 2s ease;
 }
 
