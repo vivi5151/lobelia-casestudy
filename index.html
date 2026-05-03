@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lobelia | Case Studies</title>
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header background--black">
-
         <!-- large screen -->
         <div class="header--large-screen header-flex-container">
-
             <!-- header logo -->
             <a href="#!">
                 <img 
                     class="header__logo" 
                     alt="Lobelia logo - black background yellow text"
                     srcset="images/header__logo.png 2x" 
-                    src="images/header__logo.png">
+                    src="images/header__logo.png"
+                >
             </a>
             
             <!-- header navbar -->
@@ -36,7 +35,7 @@
             </nav>
         </div>
 
-        <!-- smalll screen -->
+        <!-- small screen -->
         <div class="header--small-screen header-flex-container">
             <!-- header logo -->
             <a href="#!">
@@ -49,13 +48,14 @@
             
             <!-- header menu button -->
             <p class="p--uppercase p--small"><a class="menu-button" href="">Menu</a></p>
+        </div>
     </header>
 
     <main>
-        <div class="sidebar-cases-container">
-
+        <!-- 2-column grid for sidebar & cases-->
+        <div class="sidebar-cases-container background--black">
             <!-- LEFT: SIDEBAR -->
-            <div class="sidebar background--black sticky">
+            <div class="sidebar">
                 <!-- sidebar navbar -->
                 <nav class="sidebar__navbar">
                     <ul class="sidebar__navbar-list">
@@ -71,9 +71,9 @@
             </div>
 
             <!-- RIGHT: CASE STUDIES -->
-            <section class="case-studies case-studies-grid background--black">
+            <section class="case-studies case-studies-grid">
                 <!-- case studies headline -->
-                <h2 class="case-studies__title span--2">Keep track of what’s changing to improve your decision making.</h2>
+                <h2 class="case-studies__title">Keep track of what’s changing to improve your decision making.</h2>
 
                 <!-- case card -->
                 <article class="case-card case-card-container">
@@ -262,7 +262,7 @@
                     <p class="case-card__location p--small p--vertical">Worldwide</p>
                 </article>
                 
-                <!-- case card -->s
+                <!-- case card -->
                 <article class="case-card case-card-container">
                     <div class="case-card__image-container">
                         <img class="case-card__image"
@@ -296,7 +296,7 @@
                     <p class="case-card__location p--small p--vertical">Worldwide</p>
                 </article>     
 
-                <!-- case card -->s
+                <!-- case card -->
                 <article class="case-card case-card-container">
                     <div class="case-card__image-container">
                         <img class="case-card__image"
@@ -335,10 +335,10 @@
     <!-- CONTACT -->
         <section class="contact">
             <!-- contact heading -->
-            <h2 class="h2--large">Ready to take action?</h2>
+            <h2 class="contact__heading h2--large">Ready to take action?</h2>
 
             <!-- contact button -->
-            <a class="button" href="#!">
+            <a class="contact__button button" href="#!">
                 <p class="button__text p--small p--uppercase">Get in touch</p>
                 <div class="button__icon"></div>
             </a>
