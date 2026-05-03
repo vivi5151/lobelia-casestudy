@@ -11,5 +11,4 @@ This is a case study for the Web Development course at the Minneapolis College o
 
 ## Author
 
-Project Code: Viviane Polarson
-Source Design: [Lobelia](https://www.lobelia.earth/)
+Project Code: Viviane Polarson | Source Design: [Lobelia](https://www.lobelia.earth/)
