@@ -11,23 +11,36 @@
 <body>
     <!-- HEADER -->
     <header class="header background--black">
-        <a href="#!">
-            <img 
-                class="header__logo" 
-                alt="Lobelia logo - black background yellow text"
-                srcset="images/header__logo.png 2x" 
-                src="images/header__logo.png">
-        </a>
-        
-        <nav class="header__navbar">
-            <ul class="header__navbar-list">
-                <li class="header__navbar-item"><a href="#!">What We Do</a></li>
-                <li class="header__navbar-item"><a href="#!">How It Works</a></li>
-                <li class="header__navbar-item header__navbar-item--selected"><a href="#!">Case Studies</a></li>
-                <li class="header__navbar-item"><a href="#!">About</a></li>
-                <li class="header__navbar-item"><a href="#!">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header--large-screen header-flex-container">
+            <a href="#!">
+                <img 
+                    class="header__logo" 
+                    alt="Lobelia logo - black background yellow text"
+                    srcset="images/header__logo.png 2x" 
+                    src="images/header__logo.png">
+            </a>
+            
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item"><a href="#!">What We Do</a></li>
+                    <li class="header__navbar-item"><a href="#!">How It Works</a></li>
+                    <li class="header__navbar-item header__navbar-item--selected"><a href="#!">Case Studies</a></li>
+                    <li class="header__navbar-item"><a href="#!">About</a></li>
+                    <li class="header__navbar-item"><a href="#!">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header--small-screen header-flex-container">
+            <a href="#!">
+                <img 
+                    class="header__logo" 
+                    alt="Lobelia logo - black background yellow text"
+                    srcset="images/header__logo.png 2x" 
+                    src="images/header__logo.png">
+            </a>
+            
+            <p class="p--uppercase p--small"><a class="menu-button" href="">Menu</a></p>
     </header>
 
     <main>
