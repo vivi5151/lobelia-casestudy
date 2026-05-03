@@ -152,8 +152,8 @@ a {
 .header {
     padding: 3rem 6rem 12rem 6rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header__navbar {
@@ -165,11 +165,12 @@ a {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 3rem;
 }
 
 .header__navbar-item {
     list-style: none;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     padding: 0.2rem 0;
     transform: translateY(0);
     transition: transform .2s ease-in-out;
